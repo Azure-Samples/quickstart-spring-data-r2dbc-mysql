@@ -16,7 +16,7 @@ echo "Creating resource group"
 az group create \
     --name $AZ_RESOURCE_GROUP \
     --location $AZ_LOCATION \
-    | jq
+    -o tsv
 
 echo "-----------------------------------------------------"
 echo "Creating MySQL Server instance"
